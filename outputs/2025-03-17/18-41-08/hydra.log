@@ -1,0 +1,12 @@
+[2025-03-17 18:41:08,879][ogn_registration][INFO] - Looking for Python nodes to register in omni.physx.fabric-106.5.7
+[2025-03-17 18:41:08,880][ogn_registration][INFO] -  -> Registered nodes from module omni.physxfabric at c:\users\c\desktop\isaaclab\isaaclab\lib\site-packages\isaacsim\extsphysics\omni.physx.fabric
+[2025-03-17 18:41:08,880][ogn_registration][INFO] - Registering nodes in c:\users\c\desktop\isaaclab\isaaclab\lib\site-packages\isaacsim\extsphysics\omni.physx.fabric imported as omni.physxfabric with AutoNode config {}
+[2025-03-17 18:41:08,880][ogn_registration][INFO] - Registering Python Node Types from omni.physxfabric at c:\users\c\desktop\isaaclab\isaaclab\lib\site-packages\isaacsim\extsphysics\omni.physx.fabric in omni.physx.fabric
+[2025-03-17 18:41:08,880][ogn_registration][INFO] - ========================================================================================================================
+[2025-03-17 18:41:08,882][ogn_registration][INFO] - No dependency on omni.graph, therefore no nodes to register in omni.physx.fabric
+[2025-03-17 18:41:08,882][ogn_registration][INFO] - ...None found, no registration to do
+[2025-03-17 18:41:08,882][ogn_registration][INFO] - ...Skipping: No OmniGraph presence in the module omni.physxfabric - No nodes in this module, do not remember it
+[2025-03-17 18:41:08,882][ogn_registration][INFO] - Destroying registration record for omni.physx.fabric
+[2025-03-17 18:41:08,882][ogn_registration][INFO] - OGN register omni.physx.fabric-106.5.7 took 2725000.000000
+[2025-03-17 18:41:37,600][skrl][INFO] - Environment wrapper: Isaac Lab (single-agent)
+[2025-03-17 18:41:37,600][skrl][INFO] - Seed: 42

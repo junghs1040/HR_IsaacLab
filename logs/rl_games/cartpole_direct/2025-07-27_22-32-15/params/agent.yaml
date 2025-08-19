@@ -1,0 +1,70 @@
+params:
+  seed: 42
+  env:
+    clip_observations: 5.0
+    clip_actions: 1.0
+  algo:
+    name: a2c_continuous
+  model:
+    name: continuous_a2c_logstd
+  network:
+    name: actor_critic
+    separate: false
+    space:
+      continuous:
+        mu_activation: None
+        sigma_activation: None
+        mu_init:
+          name: default
+        sigma_init:
+          name: const_initializer
+          val: 0
+        fixed_sigma: true
+    mlp:
+      units:
+      - 32
+      - 32
+      activation: elu
+      d2rl: false
+      initializer:
+        name: default
+      regularizer:
+        name: None
+  load_checkpoint: false
+  load_path: ''
+  config:
+    name: cartpole_direct
+    env_name: rlgpu
+    device: cuda:0
+    device_name: cuda:0
+    multi_gpu: false
+    ppo: true
+    mixed_precision: false
+    normalize_input: true
+    normalize_value: true
+    num_actors: -1
+    reward_shaper:
+      scale_value: 0.1
+    normalize_advantage: true
+    gamma: 0.99
+    tau: 0.95
+    learning_rate: 5e-4
+    lr_schedule: adaptive
+    kl_threshold: 0.008
+    score_to_win: 20000
+    max_epochs: 150
+    save_best_after: 50
+    save_frequency: 25
+    grad_norm: 1.0
+    entropy_coef: 0.0
+    truncate_grads: true
+    e_clip: 0.2
+    horizon_length: 32
+    minibatch_size: 16384
+    mini_epochs: 8
+    critic_coef: 4
+    clip_value: true
+    seq_length: 4
+    bounds_loss_coef: 0.0001
+    train_dir: C:\Users\c\IsaacLab\logs\rl_games\cartpole_direct
+    full_experiment_name: 2025-07-27_22-32-15

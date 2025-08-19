@@ -1,0 +1,120 @@
+--- git status ---
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/__init__.py
+	modified:   source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/agents/rsl_rl_ppo_cfg.py
+	modified:   source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/flat_env_cfg.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	scripts/tutorials/01_assets/add_new_robot.py
+	source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py
+
+no changes added to commit (use "git add" and/or "git commit -a") 
+
+
+--- git diff ---
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/__init__.py
+index 7e9bcc48f..97b2ab86b 100644
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/__init__.py
++++ b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/__init__.py
+@@ -23,6 +23,7 @@ gym.register(
+ )
+ 
+ 
++
+ gym.register(
+     id="Isaac-Velocity-Rough-H1-Play-v0",
+     entry_point="isaaclab.envs:ManagerBasedRLEnv",
+@@ -40,7 +41,7 @@ gym.register(
+     entry_point="isaaclab.envs:ManagerBasedRLEnv",
+     disable_env_checker=True,
+     kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:H1FlatEnvCfg",
++        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:1FlatEnvCfg",
+         "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:H1FlatPPORunnerCfg",
+         "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+     },
+@@ -57,3 +58,29 @@ gym.register(
+         "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+     },
+ )
++
++# Humanoid Robot Lab TEST 250811
++
++gym.register(
++    id="Isaac-HRLAB-Rough-H1-v0",
++    entry_point="isaaclab.envs:ManagerBasedRLEnv",
++    disable_env_checker=True,
++    kwargs={
++        "env_cfg_entry_point": f"{__name__}.HRLAB_rough_env_cfg:HRLABH1RoughEnvCfg",
++        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:HRLABH1RoughPPORunnerCfg",
++        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
++    },
++)
++
++
++
++gym.register(
++    id="Isaac-HRLAB-Rough-H1-Play-v0",
++    entry_point="isaaclab.envs:ManagerBasedRLEnv",
++    disable_env_checker=True,
++    kwargs={
++        "env_cfg_entry_point": f"{__name__}.HRLAB_rough_env_cfg:HRLABH1RoughEnvCfg_PLAY",
++        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:HRLABH1RoughPPORunnerCfg",
++        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
++    },
++)
+\ No newline at end of file
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/agents/rsl_rl_ppo_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/agents/rsl_rl_ppo_cfg.py
+index bde55dd7e..e114d02a5 100644
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/agents/rsl_rl_ppo_cfg.py
++++ b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/agents/rsl_rl_ppo_cfg.py
+@@ -35,6 +35,34 @@ class H1RoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+         desired_kl=0.01,
+         max_grad_norm=1.0,
+     )
++    
++@configclass
++class HRLABH1RoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
++    num_steps_per_env = 24
++    max_iterations = 3000
++    save_interval = 50
++    experiment_name = "HRLAB_h1_rough"
++    empirical_normalization = False
++    policy = RslRlPpoActorCriticCfg(
++        init_noise_std=1.0,
++        actor_hidden_dims=[512, 256, 128],
++        critic_hidden_dims=[512, 256, 128],
++        activation="elu",
++    )
++    algorithm = RslRlPpoAlgorithmCfg(
++        value_loss_coef=1.0,
++        use_clipped_value_loss=True,
++        clip_param=0.2,
++        entropy_coef=0.01,
++        num_learning_epochs=5,
++        num_mini_batches=4,
++        learning_rate=1.0e-3,
++        schedule="adaptive",
++        gamma=0.99,
++        lam=0.95,
++        desired_kl=0.01,
++        max_grad_norm=1.0,
++    )
+ 
+ 
+ @configclass
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/flat_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/flat_env_cfg.py
+index 18c78161c..f8103aa2d 100644
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/flat_env_cfg.py
++++ b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/flat_env_cfg.py
+@@ -39,3 +39,4 @@ class H1FlatEnvCfg_PLAY(H1FlatEnvCfg):
+         # remove random pushing
+         self.events.base_external_force_torque = None
+         self.events.push_robot = None
++
