@@ -80,7 +80,7 @@ class HRLABH1RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
             self.scene.height_scanner.prim_path = "{ENV_REGEX_NS}/Robot/torso_link"
 
         # Randomization
-        self.events.push_robot = None
+        self.events.push_robot.params={"velocity_range": {"x": (-0.5, 0.5), "y": (-0.5, 0.5)}} # = None
         self.events.add_base_mass = None
         self.events.reset_robot_joints.params["position_range"] = (1.0, 1.0)
         self.events.base_external_force_torque.params["asset_cfg"].body_names = [".*torso_link"]
@@ -129,8 +129,8 @@ class HRLABH1RoughEnvCfg_PLAY(HRLABH1RoughEnvCfg):
         self.scene.terrain.max_init_terrain_level = None
         # reduce the number of terrains to save memory
         if self.scene.terrain.terrain_generator is not None:
-            self.scene.terrain.terrain_generator.num_rows = 5
-            self.scene.terrain.terrain_generator.num_cols = 5
+            self.scene.terrain.terrain_generator.num_rows = 1
+            self.scene.terrain.terrain_generator.num_cols = 1
             self.scene.terrain.terrain_generator.curriculum = False
 
         self.commands.base_velocity.ranges.lin_vel_x = (0.0, 0.0)

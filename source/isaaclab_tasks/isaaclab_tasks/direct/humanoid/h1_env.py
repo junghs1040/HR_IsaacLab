@@ -23,7 +23,7 @@ from isaaclab_tasks.direct.locomotion.locomotion_env import LocomotionEnv
 @configclass
 class H1EnvCfg(DirectRLEnvCfg):
     # env
-    episode_length_s = 20.0
+    episode_length_s = 40.0
     decimation = 4
     action_scale = 1.0
     action_space = 19
@@ -32,6 +32,7 @@ class H1EnvCfg(DirectRLEnvCfg):
 
     # simulation
     sim: SimulationCfg = SimulationCfg(dt=0.005, render_interval=decimation)
+    
     terrain = TerrainImporterCfg(
         prim_path="/World/ground",
         terrain_type="generator",

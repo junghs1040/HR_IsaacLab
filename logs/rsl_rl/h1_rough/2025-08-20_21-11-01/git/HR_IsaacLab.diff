@@ -1,0 +1,3365 @@
+--- git status ---
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+	modified:   scripts/reinforcement_learning/rsl_rl/__pycache__/cli_args.cpython-310.pyc
+	modified:   source/isaaclab_tasks/isaaclab_tasks/direct/humanoid/h1_env.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/rsl_rl_ppo_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/skrl_flat_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/skrl_rough_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/flat_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/rough_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/rsl_rl_ppo_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/skrl_flat_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/skrl_rough_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/flat_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/rough_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__pycache__/rough_env_cfg.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__pycache__/rsl_rl_ppo_cfg.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rl_games_flat_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rl_games_rough_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rsl_rl_ppo_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/skrl_flat_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/skrl_rough_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/flat_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/rough_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/rsl_rl_ppo_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/skrl_flat_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/skrl_rough_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/flat_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/rough_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/rsl_rl_ppo_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/skrl_flat_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/skrl_rough_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/flat_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/rough_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/rsl_rl_ppo_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/skrl_flat_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/skrl_rough_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/flat_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/rough_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/__init__.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/__pycache__/__init__.cpython-310.pyc
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/rsl_rl_ppo_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/skrl_flat_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/skrl_rough_ppo_cfg.yaml
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/flat_env_cfg.py
+	deleted:    source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/rough_env_cfg.py
+	modified:   source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	logs/rsl_rl/h1_rough/2025-08-20_21-11-01/
+	outputs/2025-08-20/
+
+no changes added to commit (use "git add" and/or "git commit -a") 
+
+
+--- git diff ---
+diff --git a/README.md b/README.md
+index 2bba02d..a13f16f 100644
+--- a/README.md
++++ b/README.md
+@@ -5,14 +5,27 @@
+ [![RSL_RK](https://img.shields.io/badge/RSL_RL-2.3.1-silver)](https://github.com/leggedrobotics/rsl_rl)
+ [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)  
+ [![License](https://img.shields.io/badge/license-BSD--3-yellow.svg)](https://opensource.org/licenses/BSD-3-Clause)
+-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)  
++
+   
+-#### Humanoid Robot Learning Environment   
++#### Humanoid Robot Learning Environment (Manager Based Env)  
+      
+ 
+ ## Installation  
+   
+-#### Train  
++## How to Train  
+ 
+ You can train the policy using this code  
+-     
+\ No newline at end of file
++  
++<pre>
++<code>     
++isaaclab.bat -p scripts/reinforcement_learning/rsl_rl/train.py --task=Isaac-Velocity-Rough-H1-v0     
++</code>
++</pre>
++  
++## How to Play  
++
++<pre>
++<code>     
++isaaclab.bat -p scripts/reinforcement_learning/rsl_rl/play.py --task=Isaac-Velocity-Rough-H1-v0 --checkpoint logs/rsl_rl/h1_rough/2025-07-20_21-19-44\model_2999.pt --num_envs 256     
++</code>
++</pre>       
+\ No newline at end of file
+diff --git a/scripts/reinforcement_learning/rsl_rl/__pycache__/cli_args.cpython-310.pyc b/scripts/reinforcement_learning/rsl_rl/__pycache__/cli_args.cpython-310.pyc
+index cdb5c59..bfda972 100644
+Binary files a/scripts/reinforcement_learning/rsl_rl/__pycache__/cli_args.cpython-310.pyc and b/scripts/reinforcement_learning/rsl_rl/__pycache__/cli_args.cpython-310.pyc differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/direct/humanoid/h1_env.py b/source/isaaclab_tasks/isaaclab_tasks/direct/humanoid/h1_env.py
+index 46dd1f1..64c6429 100644
+--- a/source/isaaclab_tasks/isaaclab_tasks/direct/humanoid/h1_env.py
++++ b/source/isaaclab_tasks/isaaclab_tasks/direct/humanoid/h1_env.py
+@@ -23,7 +23,7 @@ from isaaclab_tasks.direct.locomotion.locomotion_env import LocomotionEnv
+ @configclass
+ class H1EnvCfg(DirectRLEnvCfg):
+     # env
+-    episode_length_s = 20.0
++    episode_length_s = 40.0
+     decimation = 4
+     action_scale = 1.0
+     action_space = 19
+@@ -32,6 +32,7 @@ class H1EnvCfg(DirectRLEnvCfg):
+ 
+     # simulation
+     sim: SimulationCfg = SimulationCfg(dt=0.005, render_interval=decimation)
++    
+     terrain = TerrainImporterCfg(
+         prim_path="/World/ground",
+         terrain_type="generator",
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/__init__.py
+deleted file mode 100644
+index 423dde8..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/__init__.py
++++ /dev/null
+@@ -1,56 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-import gymnasium as gym
+-
+-from . import agents
+-
+-##
+-# Register Gym environments.
+-##
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Unitree-A1-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:UnitreeA1FlatEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeA1FlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Unitree-A1-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:UnitreeA1FlatEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeA1FlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Unitree-A1-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:UnitreeA1RoughEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeA1RoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Unitree-A1-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:UnitreeA1RoughEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeA1RoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index b58cdc2..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/__init__.py
+deleted file mode 100644
+index e75ca2b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/__init__.py
++++ /dev/null
+@@ -1,4 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index c76826d..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/rsl_rl_ppo_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/rsl_rl_ppo_cfg.py
+deleted file mode 100644
+index 364399b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/rsl_rl_ppo_cfg.py
++++ /dev/null
+@@ -1,48 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
+-
+-
+-@configclass
+-class UnitreeA1RoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+-    num_steps_per_env = 24
+-    max_iterations = 1500
+-    save_interval = 50
+-    experiment_name = "unitree_a1_rough"
+-    empirical_normalization = False
+-    policy = RslRlPpoActorCriticCfg(
+-        init_noise_std=1.0,
+-        actor_hidden_dims=[512, 256, 128],
+-        critic_hidden_dims=[512, 256, 128],
+-        activation="elu",
+-    )
+-    algorithm = RslRlPpoAlgorithmCfg(
+-        value_loss_coef=1.0,
+-        use_clipped_value_loss=True,
+-        clip_param=0.2,
+-        entropy_coef=0.01,
+-        num_learning_epochs=5,
+-        num_mini_batches=4,
+-        learning_rate=1.0e-3,
+-        schedule="adaptive",
+-        gamma=0.99,
+-        lam=0.95,
+-        desired_kl=0.01,
+-        max_grad_norm=1.0,
+-    )
+-
+-
+-@configclass
+-class UnitreeA1FlatPPORunnerCfg(UnitreeA1RoughPPORunnerCfg):
+-    def __post_init__(self):
+-        super().__post_init__()
+-
+-        self.max_iterations = 300
+-        self.experiment_name = "unitree_a1_flat"
+-        self.policy.actor_hidden_dims = [128, 128, 128]
+-        self.policy.critic_hidden_dims = [128, 128, 128]
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/skrl_flat_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/skrl_flat_ppo_cfg.yaml
+deleted file mode 100644
+index 5e2a20e..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/skrl_flat_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.01
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "unitree_a1_flat"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 7200
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/skrl_rough_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/skrl_rough_ppo_cfg.yaml
+deleted file mode 100644
+index 17dbaa0..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/agents/skrl_rough_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.01
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "unitree_a1_rough"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 36000
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/flat_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/flat_env_cfg.py
+deleted file mode 100644
+index 252cd36..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/flat_env_cfg.py
++++ /dev/null
+@@ -1,43 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from .rough_env_cfg import UnitreeA1RoughEnvCfg
+-
+-
+-@configclass
+-class UnitreeA1FlatEnvCfg(UnitreeA1RoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # override rewards
+-        self.rewards.flat_orientation_l2.weight = -2.5
+-        self.rewards.feet_air_time.weight = 0.25
+-
+-        # change terrain to flat
+-        self.scene.terrain.terrain_type = "plane"
+-        self.scene.terrain.terrain_generator = None
+-        # no height scan
+-        self.scene.height_scanner = None
+-        self.observations.policy.height_scan = None
+-        # no terrain curriculum
+-        self.curriculum.terrain_levels = None
+-
+-
+-class UnitreeA1FlatEnvCfg_PLAY(UnitreeA1FlatEnvCfg):
+-    def __post_init__(self) -> None:
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/rough_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/rough_env_cfg.py
+deleted file mode 100644
+index bad8baa..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/a1/rough_env_cfg.py
++++ /dev/null
+@@ -1,84 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+-
+-##
+-# Pre-defined configs
+-##
+-from isaaclab_assets.robots.unitree import UNITREE_A1_CFG  # isort: skip
+-
+-
+-@configclass
+-class UnitreeA1RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        self.scene.robot = UNITREE_A1_CFG.replace(prim_path="{ENV_REGEX_NS}/Robot")
+-        self.scene.height_scanner.prim_path = "{ENV_REGEX_NS}/Robot/trunk"
+-        # scale down the terrains because the robot is small
+-        self.scene.terrain.terrain_generator.sub_terrains["boxes"].grid_height_range = (0.025, 0.1)
+-        self.scene.terrain.terrain_generator.sub_terrains["random_rough"].noise_range = (0.01, 0.06)
+-        self.scene.terrain.terrain_generator.sub_terrains["random_rough"].noise_step = 0.01
+-
+-        # reduce action scale
+-        self.actions.joint_pos.scale = 0.25
+-
+-        # event
+-        self.events.push_robot = None
+-        self.events.add_base_mass.params["mass_distribution_params"] = (-1.0, 3.0)
+-        self.events.add_base_mass.params["asset_cfg"].body_names = "trunk"
+-        self.events.base_external_force_torque.params["asset_cfg"].body_names = "trunk"
+-        self.events.reset_robot_joints.params["position_range"] = (1.0, 1.0)
+-        self.events.reset_base.params = {
+-            "pose_range": {"x": (-0.5, 0.5), "y": (-0.5, 0.5), "yaw": (-3.14, 3.14)},
+-            "velocity_range": {
+-                "x": (0.0, 0.0),
+-                "y": (0.0, 0.0),
+-                "z": (0.0, 0.0),
+-                "roll": (0.0, 0.0),
+-                "pitch": (0.0, 0.0),
+-                "yaw": (0.0, 0.0),
+-            },
+-        }
+-
+-        # rewards
+-        self.rewards.feet_air_time.params["sensor_cfg"].body_names = ".*_foot"
+-        self.rewards.feet_air_time.weight = 0.01
+-        self.rewards.undesired_contacts = None
+-        self.rewards.dof_torques_l2.weight = -0.0002
+-        self.rewards.track_lin_vel_xy_exp.weight = 1.5
+-        self.rewards.track_ang_vel_z_exp.weight = 0.75
+-        self.rewards.dof_acc_l2.weight = -2.5e-7
+-
+-        # terminations
+-        self.terminations.base_contact.params["sensor_cfg"].body_names = "trunk"
+-
+-
+-@configclass
+-class UnitreeA1RoughEnvCfg_PLAY(UnitreeA1RoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # spawn the robot randomly in the grid (instead of their terrain levels)
+-        self.scene.terrain.max_init_terrain_level = None
+-        # reduce the number of terrains to save memory
+-        if self.scene.terrain.terrain_generator is not None:
+-            self.scene.terrain.terrain_generator.num_rows = 5
+-            self.scene.terrain.terrain_generator.num_cols = 5
+-            self.scene.terrain.terrain_generator.curriculum = False
+-
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/__init__.py
+deleted file mode 100644
+index 46b745c..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/__init__.py
++++ /dev/null
+@@ -1,55 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-import gymnasium as gym
+-
+-from . import agents
+-
+-##
+-# Register Gym environments.
+-##
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Anymal-B-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:AnymalBFlatEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalBFlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Anymal-B-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:AnymalBFlatEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalBFlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Anymal-B-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:AnymalBRoughEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalBRoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Anymal-B-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:AnymalBRoughEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalBRoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index ff9ec44..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/__init__.py
+deleted file mode 100644
+index e75ca2b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/__init__.py
++++ /dev/null
+@@ -1,4 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index 9086070..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/rsl_rl_ppo_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/rsl_rl_ppo_cfg.py
+deleted file mode 100644
+index 1752357..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/rsl_rl_ppo_cfg.py
++++ /dev/null
+@@ -1,48 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
+-
+-
+-@configclass
+-class AnymalBRoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+-    num_steps_per_env = 24
+-    max_iterations = 1500
+-    save_interval = 50
+-    experiment_name = "anymal_b_rough"
+-    empirical_normalization = False
+-    policy = RslRlPpoActorCriticCfg(
+-        init_noise_std=1.0,
+-        actor_hidden_dims=[512, 256, 128],
+-        critic_hidden_dims=[512, 256, 128],
+-        activation="elu",
+-    )
+-    algorithm = RslRlPpoAlgorithmCfg(
+-        value_loss_coef=1.0,
+-        use_clipped_value_loss=True,
+-        clip_param=0.2,
+-        entropy_coef=0.005,
+-        num_learning_epochs=5,
+-        num_mini_batches=4,
+-        learning_rate=1.0e-3,
+-        schedule="adaptive",
+-        gamma=0.99,
+-        lam=0.95,
+-        desired_kl=0.01,
+-        max_grad_norm=1.0,
+-    )
+-
+-
+-@configclass
+-class AnymalBFlatPPORunnerCfg(AnymalBRoughPPORunnerCfg):
+-    def __post_init__(self):
+-        super().__post_init__()
+-
+-        self.max_iterations = 300
+-        self.experiment_name = "anymal_b_flat"
+-        self.policy.actor_hidden_dims = [128, 128, 128]
+-        self.policy.critic_hidden_dims = [128, 128, 128]
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/skrl_flat_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/skrl_flat_ppo_cfg.yaml
+deleted file mode 100644
+index 7715792..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/skrl_flat_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.005
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "anymal_b_flat"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 7200
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/skrl_rough_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/skrl_rough_ppo_cfg.yaml
+deleted file mode 100644
+index 480b038..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/agents/skrl_rough_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.005
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "anymal_b_rough"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 36000
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/flat_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/flat_env_cfg.py
+deleted file mode 100644
+index effaef2..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/flat_env_cfg.py
++++ /dev/null
+@@ -1,43 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from .rough_env_cfg import AnymalBRoughEnvCfg
+-
+-
+-@configclass
+-class AnymalBFlatEnvCfg(AnymalBRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # override rewards
+-        self.rewards.flat_orientation_l2.weight = -5.0
+-        self.rewards.dof_torques_l2.weight = -2.5e-5
+-        self.rewards.feet_air_time.weight = 0.5
+-        # change terrain to flat
+-        self.scene.terrain.terrain_type = "plane"
+-        self.scene.terrain.terrain_generator = None
+-        # no height scan
+-        self.scene.height_scanner = None
+-        self.observations.policy.height_scan = None
+-        # no terrain curriculum
+-        self.curriculum.terrain_levels = None
+-
+-
+-class AnymalBFlatEnvCfg_PLAY(AnymalBFlatEnvCfg):
+-    def __post_init__(self) -> None:
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/rough_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/rough_env_cfg.py
+deleted file mode 100644
+index 429fc9b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_b/rough_env_cfg.py
++++ /dev/null
+@@ -1,46 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+-
+-##
+-# Pre-defined configs
+-##
+-from isaaclab_assets import ANYMAL_B_CFG  # isort: skip
+-
+-
+-@configclass
+-class AnymalBRoughEnvCfg(LocomotionVelocityRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-        # switch robot to anymal-d
+-        self.scene.robot = ANYMAL_B_CFG.replace(prim_path="{ENV_REGEX_NS}/Robot")
+-
+-
+-@configclass
+-class AnymalBRoughEnvCfg_PLAY(AnymalBRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # spawn the robot randomly in the grid (instead of their terrain levels)
+-        self.scene.terrain.max_init_terrain_level = None
+-        # reduce the number of terrains to save memory
+-        if self.scene.terrain.terrain_generator is not None:
+-            self.scene.terrain.terrain_generator.num_rows = 5
+-            self.scene.terrain.terrain_generator.num_cols = 5
+-            self.scene.terrain.terrain_generator.curriculum = False
+-
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__init__.py
+deleted file mode 100644
+index 8a3b8e9..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__init__.py
++++ /dev/null
+@@ -1,60 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-import gymnasium as gym
+-
+-from . import agents
+-
+-##
+-# Register Gym environments.
+-##
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Anymal-C-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:AnymalCFlatEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerCfg",
+-        "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_flat_ppo_cfg.yaml",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Anymal-C-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:AnymalCFlatEnvCfg_PLAY",
+-        "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_flat_ppo_cfg.yaml",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Anymal-C-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:AnymalCRoughEnvCfg",
+-        "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_rough_ppo_cfg.yaml",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Anymal-C-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:AnymalCRoughEnvCfg_PLAY",
+-        "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_rough_ppo_cfg.yaml",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index 9db3180..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__pycache__/rough_env_cfg.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__pycache__/rough_env_cfg.cpython-310.pyc
+deleted file mode 100644
+index e21dee9..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/__pycache__/rough_env_cfg.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__init__.py
+deleted file mode 100644
+index e75ca2b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__init__.py
++++ /dev/null
+@@ -1,4 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index 7974016..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__pycache__/rsl_rl_ppo_cfg.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__pycache__/rsl_rl_ppo_cfg.cpython-310.pyc
+deleted file mode 100644
+index f37d729..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/__pycache__/rsl_rl_ppo_cfg.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rl_games_flat_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rl_games_flat_ppo_cfg.yaml
+deleted file mode 100644
+index c472ce6..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rl_games_flat_ppo_cfg.yaml
++++ /dev/null
+@@ -1,76 +0,0 @@
+-params:
+-  seed: 42
+-
+-  # environment wrapper clipping
+-  env:
+-    clip_actions: 1.0
+-
+-  algo:
+-    name: a2c_continuous
+-
+-  model:
+-    name: continuous_a2c_logstd
+-
+-  network:
+-    name: actor_critic
+-    separate: False
+-    space:
+-      continuous:
+-        mu_activation: None
+-        sigma_activation: None
+-
+-        mu_init:
+-          name: default
+-        sigma_init:
+-          name: const_initializer
+-          val: 0
+-        fixed_sigma: True
+-    mlp:
+-      units: [128, 128, 128]
+-      activation: elu
+-      d2rl: False
+-
+-      initializer:
+-        name: default
+-      regularizer:
+-        name: None
+-
+-  load_checkpoint: False # flag which sets whether to load the checkpoint
+-  load_path: '' # path to the checkpoint to load
+-
+-  config:
+-    name: anymal_c_flat
+-    env_name: rlgpu
+-    device: 'cuda:0'
+-    device_name: 'cuda:0'
+-    multi_gpu: False
+-    ppo: True
+-    mixed_precision: True
+-    normalize_input: False
+-    normalize_value: True
+-    value_bootstrap: True
+-    num_actors: -1  # configured from the script (based on num_envs)
+-    reward_shaper:
+-      scale_value: 0.6
+-    normalize_advantage: True
+-    gamma: 0.99
+-    tau: 0.95
+-    learning_rate: 1e-3
+-    lr_schedule: adaptive
+-    schedule_type: legacy
+-    kl_threshold: 0.01
+-    score_to_win: 20000
+-    max_epochs: 300
+-    save_best_after: 100
+-    save_frequency: 50
+-    grad_norm: 1.0
+-    entropy_coef: 0.005
+-    truncate_grads: True
+-    e_clip: 0.2
+-    horizon_length: 24
+-    minibatch_size: 24576
+-    mini_epochs: 5
+-    critic_coef: 2.0
+-    clip_value: True
+-    seq_length: 4
+-    bounds_loss_coef: 0.0
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rl_games_rough_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rl_games_rough_ppo_cfg.yaml
+deleted file mode 100644
+index 042799d..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rl_games_rough_ppo_cfg.yaml
++++ /dev/null
+@@ -1,76 +0,0 @@
+-params:
+-  seed: 42
+-
+-  # environment wrapper clipping
+-  env:
+-    clip_actions: 1.0
+-
+-  algo:
+-    name: a2c_continuous
+-
+-  model:
+-    name: continuous_a2c_logstd
+-
+-  network:
+-    name: actor_critic
+-    separate: False
+-    space:
+-      continuous:
+-        mu_activation: None
+-        sigma_activation: None
+-
+-        mu_init:
+-          name: default
+-        sigma_init:
+-          name: const_initializer
+-          val: 0
+-        fixed_sigma: True
+-    mlp:
+-      units: [512, 256, 128]
+-      activation: elu
+-      d2rl: False
+-
+-      initializer:
+-        name: default
+-      regularizer:
+-        name: None
+-
+-  load_checkpoint: False # flag which sets whether to load the checkpoint
+-  load_path: '' # path to the checkpoint to load
+-
+-  config:
+-    name: anymal_c_rough
+-    env_name: rlgpu
+-    device: 'cuda:0'
+-    device_name: 'cuda:0'
+-    multi_gpu: False
+-    ppo: True
+-    mixed_precision: True
+-    normalize_input: False
+-    normalize_value: True
+-    value_bootstrap: True
+-    num_actors: -1  # configured from the script (based on num_envs)
+-    reward_shaper:
+-      scale_value: 0.6
+-    normalize_advantage: True
+-    gamma: 0.99
+-    tau: 0.95
+-    learning_rate: 1e-3
+-    lr_schedule: adaptive
+-    schedule_type: legacy
+-    kl_threshold: 0.01
+-    score_to_win: 20000
+-    max_epochs: 1500
+-    save_best_after: 100
+-    save_frequency: 50
+-    grad_norm: 1.0
+-    entropy_coef: 0.005
+-    truncate_grads: True
+-    e_clip: 0.2
+-    horizon_length: 24
+-    minibatch_size: 24576
+-    mini_epochs: 5
+-    critic_coef: 2.0
+-    clip_value: True
+-    seq_length: 4
+-    bounds_loss_coef: 0.0
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rsl_rl_ppo_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rsl_rl_ppo_cfg.py
+deleted file mode 100644
+index 09bd622..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/rsl_rl_ppo_cfg.py
++++ /dev/null
+@@ -1,48 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
+-
+-
+-@configclass
+-class AnymalCRoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+-    num_steps_per_env = 24
+-    max_iterations = 1500
+-    save_interval = 50
+-    experiment_name = "anymal_c_rough"
+-    empirical_normalization = False
+-    policy = RslRlPpoActorCriticCfg(
+-        init_noise_std=1.0,
+-        actor_hidden_dims=[512, 256, 128],
+-        critic_hidden_dims=[512, 256, 128],
+-        activation="elu",
+-    )
+-    algorithm = RslRlPpoAlgorithmCfg(
+-        value_loss_coef=1.0,
+-        use_clipped_value_loss=True,
+-        clip_param=0.2,
+-        entropy_coef=0.005,
+-        num_learning_epochs=5,
+-        num_mini_batches=4,
+-        learning_rate=1.0e-3,
+-        schedule="adaptive",
+-        gamma=0.99,
+-        lam=0.95,
+-        desired_kl=0.01,
+-        max_grad_norm=1.0,
+-    )
+-
+-
+-@configclass
+-class AnymalCFlatPPORunnerCfg(AnymalCRoughPPORunnerCfg):
+-    def __post_init__(self):
+-        super().__post_init__()
+-
+-        self.max_iterations = 300
+-        self.experiment_name = "anymal_c_flat"
+-        self.policy.actor_hidden_dims = [128, 128, 128]
+-        self.policy.critic_hidden_dims = [128, 128, 128]
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/skrl_flat_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/skrl_flat_ppo_cfg.yaml
+deleted file mode 100644
+index cb90016..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/skrl_flat_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: RunningStandardScaler
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.005
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 0.6
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "anymal_c_flat"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 7200
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/skrl_rough_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/skrl_rough_ppo_cfg.yaml
+deleted file mode 100644
+index d7c6faa..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/agents/skrl_rough_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: RunningStandardScaler
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.005
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 0.6
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "anymal_c_rough"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 36000
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/flat_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/flat_env_cfg.py
+deleted file mode 100644
+index 34a6437..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/flat_env_cfg.py
++++ /dev/null
+@@ -1,43 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from .rough_env_cfg import AnymalCRoughEnvCfg
+-
+-
+-@configclass
+-class AnymalCFlatEnvCfg(AnymalCRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # override rewards
+-        self.rewards.flat_orientation_l2.weight = -5.0
+-        self.rewards.dof_torques_l2.weight = -2.5e-5
+-        self.rewards.feet_air_time.weight = 0.5
+-        # change terrain to flat
+-        self.scene.terrain.terrain_type = "plane"
+-        self.scene.terrain.terrain_generator = None
+-        # no height scan
+-        self.scene.height_scanner = None
+-        self.observations.policy.height_scan = None
+-        # no terrain curriculum
+-        self.curriculum.terrain_levels = None
+-
+-
+-class AnymalCFlatEnvCfg_PLAY(AnymalCFlatEnvCfg):
+-    def __post_init__(self) -> None:
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/rough_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/rough_env_cfg.py
+deleted file mode 100644
+index 31279fd..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_c/rough_env_cfg.py
++++ /dev/null
+@@ -1,46 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+-
+-##
+-# Pre-defined configs
+-##
+-from isaaclab_assets.robots.anymal import ANYMAL_C_CFG  # isort: skip
+-
+-
+-@configclass
+-class AnymalCRoughEnvCfg(LocomotionVelocityRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-        # switch robot to anymal-c
+-        self.scene.robot = ANYMAL_C_CFG.replace(prim_path="{ENV_REGEX_NS}/Robot")
+-
+-
+-@configclass
+-class AnymalCRoughEnvCfg_PLAY(AnymalCRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # spawn the robot randomly in the grid (instead of their terrain levels)
+-        self.scene.terrain.max_init_terrain_level = None
+-        # reduce the number of terrains to save memory
+-        if self.scene.terrain.terrain_generator is not None:
+-            self.scene.terrain.terrain_generator.num_rows = 5
+-            self.scene.terrain.terrain_generator.num_cols = 5
+-            self.scene.terrain.terrain_generator.curriculum = False
+-
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/__init__.py
+deleted file mode 100644
+index 60e41b7..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/__init__.py
++++ /dev/null
+@@ -1,56 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-import gymnasium as gym
+-
+-from . import agents
+-
+-##
+-# Register Gym environments.
+-##
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Anymal-D-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:AnymalDFlatEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalDFlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Anymal-D-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:AnymalDFlatEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalDFlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Anymal-D-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:AnymalDRoughEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalDRoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Anymal-D-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:AnymalDRoughEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalDRoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index 6ff559b..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/__init__.py
+deleted file mode 100644
+index e75ca2b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/__init__.py
++++ /dev/null
+@@ -1,4 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index 92e8f6f..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/rsl_rl_ppo_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/rsl_rl_ppo_cfg.py
+deleted file mode 100644
+index e2c5710..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/rsl_rl_ppo_cfg.py
++++ /dev/null
+@@ -1,48 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
+-
+-
+-@configclass
+-class AnymalDRoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+-    num_steps_per_env = 24
+-    max_iterations = 1500
+-    save_interval = 50
+-    experiment_name = "anymal_d_rough"
+-    empirical_normalization = False
+-    policy = RslRlPpoActorCriticCfg(
+-        init_noise_std=1.0,
+-        actor_hidden_dims=[512, 256, 128],
+-        critic_hidden_dims=[512, 256, 128],
+-        activation="elu",
+-    )
+-    algorithm = RslRlPpoAlgorithmCfg(
+-        value_loss_coef=1.0,
+-        use_clipped_value_loss=True,
+-        clip_param=0.2,
+-        entropy_coef=0.005,
+-        num_learning_epochs=5,
+-        num_mini_batches=4,
+-        learning_rate=1.0e-3,
+-        schedule="adaptive",
+-        gamma=0.99,
+-        lam=0.95,
+-        desired_kl=0.01,
+-        max_grad_norm=1.0,
+-    )
+-
+-
+-@configclass
+-class AnymalDFlatPPORunnerCfg(AnymalDRoughPPORunnerCfg):
+-    def __post_init__(self):
+-        super().__post_init__()
+-
+-        self.max_iterations = 300
+-        self.experiment_name = "anymal_d_flat"
+-        self.policy.actor_hidden_dims = [128, 128, 128]
+-        self.policy.critic_hidden_dims = [128, 128, 128]
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/skrl_flat_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/skrl_flat_ppo_cfg.yaml
+deleted file mode 100644
+index b770447..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/skrl_flat_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.005
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "anymal_d_flat"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 7200
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/skrl_rough_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/skrl_rough_ppo_cfg.yaml
+deleted file mode 100644
+index 465c0c0..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/agents/skrl_rough_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.005
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "anymal_d_rough"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 36000
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/flat_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/flat_env_cfg.py
+deleted file mode 100644
+index 430c2d7..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/flat_env_cfg.py
++++ /dev/null
+@@ -1,43 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from .rough_env_cfg import AnymalDRoughEnvCfg
+-
+-
+-@configclass
+-class AnymalDFlatEnvCfg(AnymalDRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # override rewards
+-        self.rewards.flat_orientation_l2.weight = -5.0
+-        self.rewards.dof_torques_l2.weight = -2.5e-5
+-        self.rewards.feet_air_time.weight = 0.5
+-        # change terrain to flat
+-        self.scene.terrain.terrain_type = "plane"
+-        self.scene.terrain.terrain_generator = None
+-        # no height scan
+-        self.scene.height_scanner = None
+-        self.observations.policy.height_scan = None
+-        # no terrain curriculum
+-        self.curriculum.terrain_levels = None
+-
+-
+-class AnymalDFlatEnvCfg_PLAY(AnymalDFlatEnvCfg):
+-    def __post_init__(self) -> None:
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/rough_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/rough_env_cfg.py
+deleted file mode 100644
+index 9ec9a1a..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/anymal_d/rough_env_cfg.py
++++ /dev/null
+@@ -1,46 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+-
+-##
+-# Pre-defined configs
+-##
+-from isaaclab_assets.robots.anymal import ANYMAL_D_CFG  # isort: skip
+-
+-
+-@configclass
+-class AnymalDRoughEnvCfg(LocomotionVelocityRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-        # switch robot to anymal-d
+-        self.scene.robot = ANYMAL_D_CFG.replace(prim_path="{ENV_REGEX_NS}/Robot")
+-
+-
+-@configclass
+-class AnymalDRoughEnvCfg_PLAY(AnymalDRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # spawn the robot randomly in the grid (instead of their terrain levels)
+-        self.scene.terrain.max_init_terrain_level = None
+-        # reduce the number of terrains to save memory
+-        if self.scene.terrain.terrain_generator is not None:
+-            self.scene.terrain.terrain_generator.num_rows = 5
+-            self.scene.terrain.terrain_generator.num_cols = 5
+-            self.scene.terrain.terrain_generator.curriculum = False
+-
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/__init__.py
+deleted file mode 100644
+index d8661a3..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/__init__.py
++++ /dev/null
+@@ -1,56 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-import gymnasium as gym
+-
+-from . import agents
+-
+-##
+-# Register Gym environments.
+-##
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Cassie-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:CassieFlatEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:CassieFlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Cassie-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:CassieFlatEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:CassieFlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Cassie-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:CassieRoughEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:CassieRoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Cassie-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:CassieRoughEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:CassieRoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index bed7f09..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/__init__.py
+deleted file mode 100644
+index e75ca2b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/__init__.py
++++ /dev/null
+@@ -1,4 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index e1f74f5..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/rsl_rl_ppo_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/rsl_rl_ppo_cfg.py
+deleted file mode 100644
+index 16c28a8..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/rsl_rl_ppo_cfg.py
++++ /dev/null
+@@ -1,48 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
+-
+-
+-@configclass
+-class CassieRoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+-    num_steps_per_env = 24
+-    max_iterations = 1500
+-    save_interval = 50
+-    experiment_name = "cassie_rough"
+-    empirical_normalization = False
+-    policy = RslRlPpoActorCriticCfg(
+-        init_noise_std=1.0,
+-        actor_hidden_dims=[512, 256, 128],
+-        critic_hidden_dims=[512, 256, 128],
+-        activation="elu",
+-    )
+-    algorithm = RslRlPpoAlgorithmCfg(
+-        value_loss_coef=1.0,
+-        use_clipped_value_loss=True,
+-        clip_param=0.2,
+-        entropy_coef=0.01,
+-        num_learning_epochs=5,
+-        num_mini_batches=4,
+-        learning_rate=1.0e-3,
+-        schedule="adaptive",
+-        gamma=0.99,
+-        lam=0.95,
+-        desired_kl=0.01,
+-        max_grad_norm=1.0,
+-    )
+-
+-
+-@configclass
+-class CassieFlatPPORunnerCfg(CassieRoughPPORunnerCfg):
+-    def __post_init__(self):
+-        super().__post_init__()
+-
+-        self.max_iterations = 1000
+-        self.experiment_name = "cassie_flat"
+-        self.policy.actor_hidden_dims = [128, 128, 128]
+-        self.policy.critic_hidden_dims = [128, 128, 128]
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/skrl_flat_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/skrl_flat_ppo_cfg.yaml
+deleted file mode 100644
+index 2c7eb12..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/skrl_flat_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.01
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "cassie_flat"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 24000
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/skrl_rough_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/skrl_rough_ppo_cfg.yaml
+deleted file mode 100644
+index 0b5686f..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/agents/skrl_rough_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.01
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "cassie_rough"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 36000
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/flat_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/flat_env_cfg.py
+deleted file mode 100644
+index 09724fe..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/flat_env_cfg.py
++++ /dev/null
+@@ -1,39 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from .rough_env_cfg import CassieRoughEnvCfg
+-
+-
+-@configclass
+-class CassieFlatEnvCfg(CassieRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-        # rewards
+-        self.rewards.flat_orientation_l2.weight = -2.5
+-        self.rewards.feet_air_time.weight = 5.0
+-        self.rewards.joint_deviation_hip.params["asset_cfg"].joint_names = ["hip_rotation_.*"]
+-        # change terrain to flat
+-        self.scene.terrain.terrain_type = "plane"
+-        self.scene.terrain.terrain_generator = None
+-        # no height scan
+-        self.scene.height_scanner = None
+-        self.observations.policy.height_scan = None
+-        # no terrain curriculum
+-        self.curriculum.terrain_levels = None
+-
+-
+-class CassieFlatEnvCfg_PLAY(CassieFlatEnvCfg):
+-    def __post_init__(self) -> None:
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/rough_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/rough_env_cfg.py
+deleted file mode 100644
+index 905710f..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/cassie/rough_env_cfg.py
++++ /dev/null
+@@ -1,114 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.managers import RewardTermCfg as RewTerm
+-from isaaclab.managers import SceneEntityCfg
+-from isaaclab.utils import configclass
+-
+-import isaaclab_tasks.manager_based.locomotion.velocity.mdp as mdp
+-from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg, RewardsCfg
+-
+-##
+-# Pre-defined configs
+-##
+-from isaaclab_assets.robots.cassie import CASSIE_CFG  # isort: skip
+-
+-
+-@configclass
+-class CassieRewardsCfg(RewardsCfg):
+-    termination_penalty = RewTerm(func=mdp.is_terminated, weight=-200.0)
+-    feet_air_time = RewTerm(
+-        func=mdp.feet_air_time_positive_biped,
+-        weight=2.5,
+-        params={
+-            "sensor_cfg": SceneEntityCfg("contact_forces", body_names=".*toe"),
+-            "command_name": "base_velocity",
+-            "threshold": 0.3,
+-        },
+-    )
+-    joint_deviation_hip = RewTerm(
+-        func=mdp.joint_deviation_l1,
+-        weight=-0.2,
+-        params={"asset_cfg": SceneEntityCfg("robot", joint_names=["hip_abduction_.*", "hip_rotation_.*"])},
+-    )
+-    joint_deviation_toes = RewTerm(
+-        func=mdp.joint_deviation_l1,
+-        weight=-0.2,
+-        params={"asset_cfg": SceneEntityCfg("robot", joint_names=["toe_joint_.*"])},
+-    )
+-    # penalize toe joint limits
+-    dof_pos_limits = RewTerm(
+-        func=mdp.joint_pos_limits,
+-        weight=-1.0,
+-        params={"asset_cfg": SceneEntityCfg("robot", joint_names="toe_joint_.*")},
+-    )
+-
+-
+-@configclass
+-class CassieRoughEnvCfg(LocomotionVelocityRoughEnvCfg):
+-    """Cassie rough environment configuration."""
+-
+-    rewards: CassieRewardsCfg = CassieRewardsCfg()
+-
+-    def __post_init__(self):
+-        super().__post_init__()
+-        # scene
+-        self.scene.robot = CASSIE_CFG.replace(prim_path="{ENV_REGEX_NS}/Robot")
+-        self.scene.height_scanner.prim_path = "{ENV_REGEX_NS}/Robot/pelvis"
+-
+-        # actions
+-        self.actions.joint_pos.scale = 0.5
+-
+-        # events
+-        self.events.push_robot = None
+-        self.events.add_base_mass = None
+-        self.events.reset_robot_joints.params["position_range"] = (1.0, 1.0)
+-        self.events.base_external_force_torque.params["asset_cfg"].body_names = [".*pelvis"]
+-        self.events.reset_base.params = {
+-            "pose_range": {"x": (-0.5, 0.5), "y": (-0.5, 0.5), "yaw": (-3.14, 3.14)},
+-            "velocity_range": {
+-                "x": (0.0, 0.0),
+-                "y": (0.0, 0.0),
+-                "z": (0.0, 0.0),
+-                "roll": (0.0, 0.0),
+-                "pitch": (0.0, 0.0),
+-                "yaw": (0.0, 0.0),
+-            },
+-        }
+-
+-        # terminations
+-        self.terminations.base_contact.params["sensor_cfg"].body_names = [".*pelvis"]
+-
+-        # rewards
+-        self.rewards.undesired_contacts = None
+-        self.rewards.dof_torques_l2.weight = -5.0e-6
+-        self.rewards.track_lin_vel_xy_exp.weight = 2.0
+-        self.rewards.track_ang_vel_z_exp.weight = 1.0
+-        self.rewards.action_rate_l2.weight *= 1.5
+-        self.rewards.dof_acc_l2.weight *= 1.5
+-
+-
+-@configclass
+-class CassieRoughEnvCfg_PLAY(CassieRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # spawn the robot randomly in the grid (instead of their terrain levels)
+-        self.scene.terrain.max_init_terrain_level = None
+-        # reduce the number of terrains to save memory
+-        if self.scene.terrain.terrain_generator is not None:
+-            self.scene.terrain.terrain_generator.num_rows = 5
+-            self.scene.terrain.terrain_generator.num_cols = 5
+-            self.scene.terrain.terrain_generator.curriculum = False
+-
+-        self.commands.base_velocity.ranges.lin_vel_x = (0.7, 1.0)
+-        self.commands.base_velocity.ranges.lin_vel_y = (0.0, 0.0)
+-        self.commands.base_velocity.ranges.heading = (0.0, 0.0)
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/__init__.py
+deleted file mode 100644
+index 658d60e..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/__init__.py
++++ /dev/null
+@@ -1,56 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-import gymnasium as gym
+-
+-from . import agents
+-
+-##
+-# Register Gym environments.
+-##
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Unitree-Go1-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:UnitreeGo1FlatEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeGo1FlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Unitree-Go1-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:UnitreeGo1FlatEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeGo1FlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Unitree-Go1-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:UnitreeGo1RoughEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeGo1RoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Unitree-Go1-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:UnitreeGo1RoughEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeGo1RoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index 9b345c1..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/__init__.py
+deleted file mode 100644
+index e75ca2b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/__init__.py
++++ /dev/null
+@@ -1,4 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index 65adb45..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/rsl_rl_ppo_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/rsl_rl_ppo_cfg.py
+deleted file mode 100644
+index 10ae186..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/rsl_rl_ppo_cfg.py
++++ /dev/null
+@@ -1,48 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
+-
+-
+-@configclass
+-class UnitreeGo1RoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+-    num_steps_per_env = 24
+-    max_iterations = 1500
+-    save_interval = 50
+-    experiment_name = "unitree_go1_rough"
+-    empirical_normalization = False
+-    policy = RslRlPpoActorCriticCfg(
+-        init_noise_std=1.0,
+-        actor_hidden_dims=[512, 256, 128],
+-        critic_hidden_dims=[512, 256, 128],
+-        activation="elu",
+-    )
+-    algorithm = RslRlPpoAlgorithmCfg(
+-        value_loss_coef=1.0,
+-        use_clipped_value_loss=True,
+-        clip_param=0.2,
+-        entropy_coef=0.01,
+-        num_learning_epochs=5,
+-        num_mini_batches=4,
+-        learning_rate=1.0e-3,
+-        schedule="adaptive",
+-        gamma=0.99,
+-        lam=0.95,
+-        desired_kl=0.01,
+-        max_grad_norm=1.0,
+-    )
+-
+-
+-@configclass
+-class UnitreeGo1FlatPPORunnerCfg(UnitreeGo1RoughPPORunnerCfg):
+-    def __post_init__(self):
+-        super().__post_init__()
+-
+-        self.max_iterations = 300
+-        self.experiment_name = "unitree_go1_flat"
+-        self.policy.actor_hidden_dims = [128, 128, 128]
+-        self.policy.critic_hidden_dims = [128, 128, 128]
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/skrl_flat_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/skrl_flat_ppo_cfg.yaml
+deleted file mode 100644
+index dabee2d..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/skrl_flat_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.01
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "unitree_go1_flat"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 7200
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/skrl_rough_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/skrl_rough_ppo_cfg.yaml
+deleted file mode 100644
+index bd87c9b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/agents/skrl_rough_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.01
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "unitree_go1_rough"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 36000
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/flat_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/flat_env_cfg.py
+deleted file mode 100644
+index 917d054..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/flat_env_cfg.py
++++ /dev/null
+@@ -1,43 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from .rough_env_cfg import UnitreeGo1RoughEnvCfg
+-
+-
+-@configclass
+-class UnitreeGo1FlatEnvCfg(UnitreeGo1RoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # override rewards
+-        self.rewards.flat_orientation_l2.weight = -2.5
+-        self.rewards.feet_air_time.weight = 0.25
+-
+-        # change terrain to flat
+-        self.scene.terrain.terrain_type = "plane"
+-        self.scene.terrain.terrain_generator = None
+-        # no height scan
+-        self.scene.height_scanner = None
+-        self.observations.policy.height_scan = None
+-        # no terrain curriculum
+-        self.curriculum.terrain_levels = None
+-
+-
+-class UnitreeGo1FlatEnvCfg_PLAY(UnitreeGo1FlatEnvCfg):
+-    def __post_init__(self) -> None:
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/rough_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/rough_env_cfg.py
+deleted file mode 100644
+index 5badde6..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go1/rough_env_cfg.py
++++ /dev/null
+@@ -1,84 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+-
+-##
+-# Pre-defined configs
+-##
+-from isaaclab_assets.robots.unitree import UNITREE_GO1_CFG  # isort: skip
+-
+-
+-@configclass
+-class UnitreeGo1RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        self.scene.robot = UNITREE_GO1_CFG.replace(prim_path="{ENV_REGEX_NS}/Robot")
+-        self.scene.height_scanner.prim_path = "{ENV_REGEX_NS}/Robot/trunk"
+-        # scale down the terrains because the robot is small
+-        self.scene.terrain.terrain_generator.sub_terrains["boxes"].grid_height_range = (0.025, 0.1)
+-        self.scene.terrain.terrain_generator.sub_terrains["random_rough"].noise_range = (0.01, 0.06)
+-        self.scene.terrain.terrain_generator.sub_terrains["random_rough"].noise_step = 0.01
+-
+-        # reduce action scale
+-        self.actions.joint_pos.scale = 0.25
+-
+-        # event
+-        self.events.push_robot = None
+-        self.events.add_base_mass.params["mass_distribution_params"] = (-1.0, 3.0)
+-        self.events.add_base_mass.params["asset_cfg"].body_names = "trunk"
+-        self.events.base_external_force_torque.params["asset_cfg"].body_names = "trunk"
+-        self.events.reset_robot_joints.params["position_range"] = (1.0, 1.0)
+-        self.events.reset_base.params = {
+-            "pose_range": {"x": (-0.5, 0.5), "y": (-0.5, 0.5), "yaw": (-3.14, 3.14)},
+-            "velocity_range": {
+-                "x": (0.0, 0.0),
+-                "y": (0.0, 0.0),
+-                "z": (0.0, 0.0),
+-                "roll": (0.0, 0.0),
+-                "pitch": (0.0, 0.0),
+-                "yaw": (0.0, 0.0),
+-            },
+-        }
+-
+-        # rewards
+-        self.rewards.feet_air_time.params["sensor_cfg"].body_names = ".*_foot"
+-        self.rewards.feet_air_time.weight = 0.01
+-        self.rewards.undesired_contacts = None
+-        self.rewards.dof_torques_l2.weight = -0.0002
+-        self.rewards.track_lin_vel_xy_exp.weight = 1.5
+-        self.rewards.track_ang_vel_z_exp.weight = 0.75
+-        self.rewards.dof_acc_l2.weight = -2.5e-7
+-
+-        # terminations
+-        self.terminations.base_contact.params["sensor_cfg"].body_names = "trunk"
+-
+-
+-@configclass
+-class UnitreeGo1RoughEnvCfg_PLAY(UnitreeGo1RoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # spawn the robot randomly in the grid (instead of their terrain levels)
+-        self.scene.terrain.max_init_terrain_level = None
+-        # reduce the number of terrains to save memory
+-        if self.scene.terrain.terrain_generator is not None:
+-            self.scene.terrain.terrain_generator.num_rows = 5
+-            self.scene.terrain.terrain_generator.num_cols = 5
+-            self.scene.terrain.terrain_generator.curriculum = False
+-
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/__init__.py
+deleted file mode 100644
+index 9e5ed32..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/__init__.py
++++ /dev/null
+@@ -1,56 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-import gymnasium as gym
+-
+-from . import agents
+-
+-##
+-# Register Gym environments.
+-##
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Unitree-Go2-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:UnitreeGo2FlatEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeGo2FlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Flat-Unitree-Go2-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:UnitreeGo2FlatEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeGo2FlatPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Unitree-Go2-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:UnitreeGo2RoughEnvCfg",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeGo2RoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+-
+-gym.register(
+-    id="Isaac-Velocity-Rough-Unitree-Go2-Play-v0",
+-    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+-    disable_env_checker=True,
+-    kwargs={
+-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:UnitreeGo2RoughEnvCfg_PLAY",
+-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:UnitreeGo2RoughPPORunnerCfg",
+-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
+-    },
+-)
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index b555871..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/__init__.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/__init__.py
+deleted file mode 100644
+index e75ca2b..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/__init__.py
++++ /dev/null
+@@ -1,4 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/__pycache__/__init__.cpython-310.pyc b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/__pycache__/__init__.cpython-310.pyc
+deleted file mode 100644
+index 2767027..0000000
+Binary files a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/__pycache__/__init__.cpython-310.pyc and /dev/null differ
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/rsl_rl_ppo_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/rsl_rl_ppo_cfg.py
+deleted file mode 100644
+index e41f809..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/rsl_rl_ppo_cfg.py
++++ /dev/null
+@@ -1,48 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
+-
+-
+-@configclass
+-class UnitreeGo2RoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+-    num_steps_per_env = 24
+-    max_iterations = 1500
+-    save_interval = 50
+-    experiment_name = "unitree_go2_rough"
+-    empirical_normalization = False
+-    policy = RslRlPpoActorCriticCfg(
+-        init_noise_std=1.0,
+-        actor_hidden_dims=[512, 256, 128],
+-        critic_hidden_dims=[512, 256, 128],
+-        activation="elu",
+-    )
+-    algorithm = RslRlPpoAlgorithmCfg(
+-        value_loss_coef=1.0,
+-        use_clipped_value_loss=True,
+-        clip_param=0.2,
+-        entropy_coef=0.01,
+-        num_learning_epochs=5,
+-        num_mini_batches=4,
+-        learning_rate=1.0e-3,
+-        schedule="adaptive",
+-        gamma=0.99,
+-        lam=0.95,
+-        desired_kl=0.01,
+-        max_grad_norm=1.0,
+-    )
+-
+-
+-@configclass
+-class UnitreeGo2FlatPPORunnerCfg(UnitreeGo2RoughPPORunnerCfg):
+-    def __post_init__(self):
+-        super().__post_init__()
+-
+-        self.max_iterations = 300
+-        self.experiment_name = "unitree_go2_flat"
+-        self.policy.actor_hidden_dims = [128, 128, 128]
+-        self.policy.critic_hidden_dims = [128, 128, 128]
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/skrl_flat_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/skrl_flat_ppo_cfg.yaml
+deleted file mode 100644
+index fea8fcc..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/skrl_flat_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [128, 128, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.01
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "unitree_go2_flat"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 7200
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/skrl_rough_ppo_cfg.yaml b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/skrl_rough_ppo_cfg.yaml
+deleted file mode 100644
+index 8089741..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/agents/skrl_rough_ppo_cfg.yaml
++++ /dev/null
+@@ -1,80 +0,0 @@
+-seed: 42
+-
+-
+-# Models are instantiated using skrl's model instantiator utility
+-# https://skrl.readthedocs.io/en/latest/api/utils/model_instantiators.html
+-models:
+-  separate: False
+-  policy:  # see gaussian_model parameters
+-    class: GaussianMixin
+-    clip_actions: False
+-    clip_log_std: True
+-    min_log_std: -20.0
+-    max_log_std: 2.0
+-    initial_log_std: 0.0
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ACTIONS
+-  value:  # see deterministic_model parameters
+-    class: DeterministicMixin
+-    clip_actions: False
+-    network:
+-      - name: net
+-        input: STATES
+-        layers: [512, 256, 128]
+-        activations: elu
+-    output: ONE
+-
+-
+-# Rollout memory
+-# https://skrl.readthedocs.io/en/latest/api/memories/random.html
+-memory:
+-  class: RandomMemory
+-  memory_size: -1  # automatically determined (same as agent:rollouts)
+-
+-
+-# PPO agent configuration (field names are from PPO_DEFAULT_CONFIG)
+-# https://skrl.readthedocs.io/en/latest/api/agents/ppo.html
+-agent:
+-  class: PPO
+-  rollouts: 24
+-  learning_epochs: 5
+-  mini_batches: 4
+-  discount_factor: 0.99
+-  lambda: 0.95
+-  learning_rate: 1.0e-03
+-  learning_rate_scheduler: KLAdaptiveLR
+-  learning_rate_scheduler_kwargs:
+-    kl_threshold: 0.01
+-  state_preprocessor: null
+-  state_preprocessor_kwargs: null
+-  value_preprocessor: null
+-  value_preprocessor_kwargs: null
+-  random_timesteps: 0
+-  learning_starts: 0
+-  grad_norm_clip: 1.0
+-  ratio_clip: 0.2
+-  value_clip: 0.2
+-  clip_predicted_values: True
+-  entropy_loss_scale: 0.01
+-  value_loss_scale: 1.0
+-  kl_threshold: 0.0
+-  rewards_shaper_scale: 1.0
+-  time_limit_bootstrap: False
+-  # logging and checkpoint
+-  experiment:
+-    directory: "unitree_go2_rough"
+-    experiment_name: ""
+-    write_interval: auto
+-    checkpoint_interval: auto
+-
+-
+-# Sequential trainer
+-# https://skrl.readthedocs.io/en/latest/api/trainers/sequential.html
+-trainer:
+-  class: SequentialTrainer
+-  timesteps: 36000
+-  environment_info: log
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/flat_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/flat_env_cfg.py
+deleted file mode 100644
+index cb0820c..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/flat_env_cfg.py
++++ /dev/null
+@@ -1,43 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from .rough_env_cfg import UnitreeGo2RoughEnvCfg
+-
+-
+-@configclass
+-class UnitreeGo2FlatEnvCfg(UnitreeGo2RoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # override rewards
+-        self.rewards.flat_orientation_l2.weight = -2.5
+-        self.rewards.feet_air_time.weight = 0.25
+-
+-        # change terrain to flat
+-        self.scene.terrain.terrain_type = "plane"
+-        self.scene.terrain.terrain_generator = None
+-        # no height scan
+-        self.scene.height_scanner = None
+-        self.observations.policy.height_scan = None
+-        # no terrain curriculum
+-        self.curriculum.terrain_levels = None
+-
+-
+-class UnitreeGo2FlatEnvCfg_PLAY(UnitreeGo2FlatEnvCfg):
+-    def __post_init__(self) -> None:
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/rough_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/rough_env_cfg.py
+deleted file mode 100644
+index 7d99166..0000000
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/go2/rough_env_cfg.py
++++ /dev/null
+@@ -1,84 +0,0 @@
+-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+-# All rights reserved.
+-#
+-# SPDX-License-Identifier: BSD-3-Clause
+-
+-from isaaclab.utils import configclass
+-
+-from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+-
+-##
+-# Pre-defined configs
+-##
+-from isaaclab_assets.robots.unitree import UNITREE_GO2_CFG  # isort: skip
+-
+-
+-@configclass
+-class UnitreeGo2RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        self.scene.robot = UNITREE_GO2_CFG.replace(prim_path="{ENV_REGEX_NS}/Robot")
+-        self.scene.height_scanner.prim_path = "{ENV_REGEX_NS}/Robot/base"
+-        # scale down the terrains because the robot is small
+-        self.scene.terrain.terrain_generator.sub_terrains["boxes"].grid_height_range = (0.025, 0.1)
+-        self.scene.terrain.terrain_generator.sub_terrains["random_rough"].noise_range = (0.01, 0.06)
+-        self.scene.terrain.terrain_generator.sub_terrains["random_rough"].noise_step = 0.01
+-
+-        # reduce action scale
+-        self.actions.joint_pos.scale = 0.25
+-
+-        # event
+-        self.events.push_robot = None
+-        self.events.add_base_mass.params["mass_distribution_params"] = (-1.0, 3.0)
+-        self.events.add_base_mass.params["asset_cfg"].body_names = "base"
+-        self.events.base_external_force_torque.params["asset_cfg"].body_names = "base"
+-        self.events.reset_robot_joints.params["position_range"] = (1.0, 1.0)
+-        self.events.reset_base.params = {
+-            "pose_range": {"x": (-0.5, 0.5), "y": (-0.5, 0.5), "yaw": (-3.14, 3.14)},
+-            "velocity_range": {
+-                "x": (0.0, 0.0),
+-                "y": (0.0, 0.0),
+-                "z": (0.0, 0.0),
+-                "roll": (0.0, 0.0),
+-                "pitch": (0.0, 0.0),
+-                "yaw": (0.0, 0.0),
+-            },
+-        }
+-
+-        # rewards
+-        self.rewards.feet_air_time.params["sensor_cfg"].body_names = ".*_foot"
+-        self.rewards.feet_air_time.weight = 0.01
+-        self.rewards.undesired_contacts = None
+-        self.rewards.dof_torques_l2.weight = -0.0002
+-        self.rewards.track_lin_vel_xy_exp.weight = 1.5
+-        self.rewards.track_ang_vel_z_exp.weight = 0.75
+-        self.rewards.dof_acc_l2.weight = -2.5e-7
+-
+-        # terminations
+-        self.terminations.base_contact.params["sensor_cfg"].body_names = "base"
+-
+-
+-@configclass
+-class UnitreeGo2RoughEnvCfg_PLAY(UnitreeGo2RoughEnvCfg):
+-    def __post_init__(self):
+-        # post init of parent
+-        super().__post_init__()
+-
+-        # make a smaller scene for play
+-        self.scene.num_envs = 50
+-        self.scene.env_spacing = 2.5
+-        # spawn the robot randomly in the grid (instead of their terrain levels)
+-        self.scene.terrain.max_init_terrain_level = None
+-        # reduce the number of terrains to save memory
+-        if self.scene.terrain.terrain_generator is not None:
+-            self.scene.terrain.terrain_generator.num_rows = 5
+-            self.scene.terrain.terrain_generator.num_cols = 5
+-            self.scene.terrain.terrain_generator.curriculum = False
+-
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
+-        # remove random pushing event
+-        self.events.base_external_force_torque = None
+-        self.events.push_robot = None
+diff --git a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py
+index 2e426d4..94255fd 100644
+--- a/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py
++++ b/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py
+@@ -80,7 +80,7 @@ class HRLABH1RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
+             self.scene.height_scanner.prim_path = "{ENV_REGEX_NS}/Robot/torso_link"
+ 
+         # Randomization
+-        self.events.push_robot = None
++        self.events.push_robot.params={"velocity_range": {"x": (-5, 5), "y": (-5, 5)}} # = None
+         self.events.add_base_mass = None
+         self.events.reset_robot_joints.params["position_range"] = (1.0, 1.0)
+         self.events.base_external_force_torque.params["asset_cfg"].body_names = [".*torso_link"]
