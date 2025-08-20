@@ -23,6 +23,7 @@ isaaclab.bat -p scripts/reinforcement_learning/rsl_rl/train.py --task=Isaac-Velo
 </pre>
   
 <br>  
+  
 ## How to Play  
    
 You can play the policy using this code  
