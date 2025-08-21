@@ -24,6 +24,8 @@ isaaclab.bat -p scripts/reinforcement_learning/rsl_rl/train.py --task=Isaac-Velo
   
 <br>  
   
+<img width="1435" height="928" alt="learning" src="https://github.com/user-attachments/assets/b014aa28-3591-4093-ad0f-17e9bc50cb84" />
+
 ## How to Play  
    
 You can play the policy using this code  
@@ -33,3 +35,5 @@ You can play the policy using this code
 isaaclab.bat -p scripts/reinforcement_learning/rsl_rl/play.py --task=Isaac-Velocity-Rough-H1-v0 --checkpoint logs/rsl_rl/h1_rough/2025-07-20_21-19-44\model_2999.pt --num_envs 256     
 </code>
 </pre>       
+  
+<img width="1435" height="852" alt="inference" src="https://github.com/user-attachments/assets/361f735b-1617-4942-bd14-03fbac89403f" />  

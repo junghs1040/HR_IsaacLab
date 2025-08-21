@@ -129,8 +129,8 @@ class HRLABH1RoughEnvCfg_PLAY(HRLABH1RoughEnvCfg):
         self.scene.terrain.max_init_terrain_level = None
         # reduce the number of terrains to save memory
         if self.scene.terrain.terrain_generator is not None:
-            self.scene.terrain.terrain_generator.num_rows = 1
-            self.scene.terrain.terrain_generator.num_cols = 1
+            self.scene.terrain.terrain_generator.num_rows = 5
+            self.scene.terrain.terrain_generator.num_cols = 5
             self.scene.terrain.terrain_generator.curriculum = False
 
         self.commands.base_velocity.ranges.lin_vel_x = (0.0, 0.0)

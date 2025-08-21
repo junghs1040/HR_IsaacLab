@@ -18,7 +18,7 @@ isaaclab_tasks/locomotion/
 ├── __init__.py
 └── velocity
     ├── config
-    │   └── anymal_c
+    │   └── h1
     │       ├── agent  # <- this is where we store the learning agent configurations
     │       ├── __init__.py  # <- this is where we register the environment and configurations to gym registry
     │       ├── flat_env_cfg.py
