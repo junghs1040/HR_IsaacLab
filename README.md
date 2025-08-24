@@ -9,8 +9,7 @@
   
 #### Humanoid Robot Learning Environment (Manager Based Env)  
      
-configuration script : [source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py]
-(https://github.com/junghs1040/HR_IsaacLab/blob/main/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py)
+configuration script : [source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py](https://github.com/junghs1040/HR_IsaacLab/blob/main/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/config/h1/HRLAB_rough_env_cfg.py)
 
 ## Installation  
   
