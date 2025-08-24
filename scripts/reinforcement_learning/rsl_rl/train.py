@@ -25,6 +25,16 @@ parser.add_argument("--num_envs", type=int, default=None, help="Number of enviro
 parser.add_argument("--task", type=str, default=None, help="Name of the task.")
 parser.add_argument("--seed", type=int, default=None, help="Seed used for the environment")
 parser.add_argument("--max_iterations", type=int, default=None, help="RL Policy training iterations.")
+
+# --------------------------- W&B: CLI 인자 추가 ---------------------------------------------- 
+parser.add_argument("--wandb", action="store_true", default=False, help="Enable Weights & Biases logging.")
+parser.add_argument("--wandb_project", type=str, default="isaaclab-rslrl", help="W&B project name.")
+parser.add_argument("--wandb_entity", type=str, default=None, help="W&B entity (team/org).")
+parser.add_argument("--wandb_run_name", type=str, default=None, help="W&B run name override.")
+parser.add_argument("--wandb_tags", type=str, default="", help="Comma-separated W&B tags.")
+parser.add_argument("--wandb_group", type=str, default=None, help="W&B group name.")
+# -------------------------------------------------------------------------------------------- 
+
 # append RSL-RL cli arguments
 cli_args.add_rsl_rl_args(parser)
 # append AppLauncher cli args
@@ -66,6 +76,10 @@ from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlVecEnvWrapper
 import isaaclab_tasks  # noqa: F401
 from isaaclab_tasks.utils import get_checkpoint_path
 from isaaclab_tasks.utils.hydra import hydra_task_config
+
+if args_cli.wandb:
+    import wandb
+    wandb.init(name="HRLAB_HUMANOID", project="PROJECT_HRLAB_HUMANOID")
 
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True

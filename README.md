@@ -36,4 +36,25 @@ isaaclab.bat -p scripts/reinforcement_learning/rsl_rl/play.py --task=Isaac-Veloc
 </code>
 </pre>       
   
-<img width="1435" height="852" alt="inference" src="https://github.com/user-attachments/assets/361f735b-1617-4942-bd14-03fbac89403f" />  
+<img width="1435" height="852" alt="inference" src="https://github.com/user-attachments/assets/361f735b-1617-4942-bd14-03fbac89403f" />   
+  
+## View Training Logs with TensorBoard  
+    
+You can use TensorBoard to monitor the current training progress in real time.  
+   
+Linux :    
+<pre>
+<code>   
+./isaaclab.sh -p -m tensorboard.main --logdir=logs
+</code>
+</pre>
+  
+window :
+<pre>
+<code>   
+isaaclab.bat -p -m tensorboard.main --logdir=logs
+</code>
+</pre>   
+   
+<img width="1890" height="928" alt="tensorboard" src="https://github.com/user-attachments/assets/62f22f9f-a57e-4a3f-9518-24b7320f3609" />  
+  
